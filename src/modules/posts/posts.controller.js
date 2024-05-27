@@ -70,8 +70,7 @@ export const updatePost = async (req, res) => {
         const theusermodeId = theUserModel.dataValues.id ;
         console.log(theusermodeId)
         if (post.dataValues.userId != theusermodeId) {
-            console.log(post.dataValues.userId);
-            console.log(theUserModelId);
+           
             return res.status(403).json({ message: "You are not authorized to update this post" });
         }
 

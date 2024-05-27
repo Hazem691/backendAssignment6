@@ -1,8 +1,8 @@
 import { Sequelize } from "sequelize";
 
 
-export const sequelize = new Sequelize('sixthassignment', 'root', '', {
-    host: 'localhost',
+export const sequelize = new Sequelize('blzhqgbsdf0nvi6md5ke', 'ubjeg4ea3dx0crnk', 'qdr6yH01gVaiIRgFwS20', {
+    host: 'blzhqgbsdf0nvi6md5ke-mysql.services.clever-cloud.com',
     dialect: 'mysql'
   });
 
