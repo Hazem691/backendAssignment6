@@ -14,6 +14,9 @@ app.use(express.json());
 app.use(userRouter) ;
 app.use(postRouter) ;
 app.use(commentRouter);
+app.get("/",(req,res)=>{
+    res.status(200).json({message : "hello on my project"}) ;
+})
 app.use("*",(req,res)=>{
     res.status(404).json({message : "page is not found"})
 })
